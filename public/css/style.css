@@ -679,6 +679,9 @@ figure {
   @media only screen and (max-width: 85rem) {
     .form_container {
       width: 70%; } }
+  @media only screen and (max-width: 50rem) {
+    .form_container {
+      width: 90%; } }
 
 .form {
   margin-top: 5rem;
