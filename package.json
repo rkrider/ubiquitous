@@ -4,7 +4,8 @@
   "description": "this is my personal website",
   "main": "index.js",
   "scripts": {
-    "compile:sass" :"node-sass sass/main.scss public/css/style.css -w"
+    "compile:sass" :"node-sass sass/main.scss public/css/style.css -w",
+    "start" : "node index.js"
   },
   "author": "RK",
   "license": "ISC",
