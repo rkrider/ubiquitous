@@ -13,22 +13,6 @@ app.get("/", function (req,res) {
     res.render("index");
 });
 
-// app.post("/", function(req,res){
-//     var name = req.body.name;
-//     var email = req.body.email;
-//     var description = req.body.description;
-
-//     var newFeedback = {name : name, email:email, description:description};
-//     Feedback.create(newFeedback, function(err,newlyFeedback) { 
-//         if(err){
-//             console.log(err);
-//         }
-//         else{
-//             res.redirect("/");
-//         }
-//      })
-// })
-
 app.get("/navigation", function(req,res){
     res.render("navigation");
 })
