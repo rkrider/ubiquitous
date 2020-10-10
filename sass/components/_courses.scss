@@ -1,0 +1,27 @@
+.courses{
+    padding: 3rem;
+
+    &_heading{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    &_slider{
+        // height: 18rem; 
+        display: flex;
+        overflow: scroll;  
+
+    }
+}
+
+.image_wrap{
+    width: auto;
+    height: auto;
+    margin: 0.5rem;
+
+    &-img{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+

@@ -1,0 +1,50 @@
+.navbar{
+    background-color: black;
+
+    &_list{
+        list-style: none;
+        display: grid;
+        grid-template-columns:10rem  repeat(auto-fit,minmax(10rem,1fr));
+        grid-template-rows: auto;  
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;      
+    }
+
+    &_item{
+        display: inline-block;
+        font-size: 1.3rem;
+        border-left: 1px solid rgb(97, 97, 92);
+        color: white;
+        text-align: center;
+
+        &:first-child{
+            border: none;
+        }
+
+        &:hover{
+            color: black;
+            background-color: white;
+        }
+    }
+
+    &_link:link,
+    &_link:visited{
+        text-decoration: none;
+        color: inherit;
+        padding: 2rem 2rem;
+        margin-top: 1rem;
+    }
+
+    &_link:active,
+    &_link:hover{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.nav-logo{
+    width: 10rem;
+    height: 5rem;
+    color: transparent;background-color: yellow;
+}

@@ -1,302 +1,129 @@
-<%- include('partials/header.ejs')  %>
+    <%- include('partials/header.ejs')  %>
+        
+            <section class="imageSlider">                
+                <div class="slideshow-container">
 
-        <div id="loader-wrapper">
-			<div id="loader"></div>
-			<div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
+                    <div class="mySlides fade">
+                    <img src="../img/data science.jpg" class="slideimage" >
+                    </div>
+
+                    <div class="mySlides fade">
+                    <img src="../img/full stack development frameworks.jpeg"  class="slideimage" >
+                    </div>
+
+                    <div class="mySlides fade">
+                    <img src="../img/interview.png"  class="slideimage" >
+                    </div>
+
+                </div>
+
+                <div style="text-align:center; display:none">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+            </section> 
+    
+    
+    <section class="features">
+        <div class="features_heading">
+            <h3 class="features_heading-title">Welcome to Ubiquitous ! How can we help you...</h3>
+            <p class="features_heading-para">It is a long established fact that a student will be distracted by the number of software training institutes when looking for the best classroom and online training in hyderabad and chennai.</p>
         </div>
+        <div class="features_content">
+            <div class="content_wrap">
+                 <div class="content_wrap-icon">
+                    <i class="fas fa-download fa-5x icon"></i>
+                 </div>
+                 <h2 class="content_wrap-heading">SoftwareTraining</h2>
+                 <p class="content_wrap-para">Ubiquitous i Technologies is No. 1 Leading training Institute in hyderabad offering classroom training on Java, J2EE, .NET and Oracle.</p>
+            </div>
 
-        <div class="content">
+            <div class="content_wrap">
+                 <div class="content_wrap-icon">
+                    <i class="fas fa-shapes fa-5x icon"></i>
+                 </div>
+                 <h2 class="content_wrap-heading">Project Training</h2>
+                 <p class="content_wrap-para">Project Training Get Trained from anywhere with an Internet connection. Instructors teach students in a classroom and you can attend these courses online in real-time also. Includes demonstrations & hands-on lab sessions</p>
+            </div>
 
-        <!-- =================================================== HEADER ========================================================== -->
+            <div class="content_wrap">
+                 <div class="content_wrap-icon">
+                    <i class="fas fa-laptop-code fa-5x icon"></i>
+                 </div>
+                 <h2 class="content_wrap-heading">Weekend Workshops</h2>
+                 <p class="content_wrap-para">Your team trained at your company premises. Learn content tailored to match your organization specific needs. You set the date & time and we deliver it..</p>
+            </div>
 
-            <header class="header" id="home">
-                <nav class="navbar">
-                    <a href="#" class="navbar_link" title="Logo">
-                        <img src="img/logo.jpg" alt="logo" class="navbar_logo">
-                    </a>
-                    <a href="/navigation" class="navbar_link" title="Menu">
-                        <svg class="menu_icon nav_icon">
-                            <use xlink:href="img/sprite.svg#icon-menu"></use>
-                        </svg>                
-                    </a>
-                </nav>
-    
-                <!-- =========================================================================== -->
-    
-                <div class="intro">
-                    <div class="myinfo small_myinfo">
-                        <h6 class="heading-secondary">Hello Folks! I am</h6>
-                        <h1 class="heading-primary animate__zoomIn animate__animated">Rahul Kumar</h1>
-                        <a href="#" class="developer_link">Full Stack Developer</a>
-                        <div class="contact">
-                            <a href="#form" class="contact_link btn">Contact Me</a>
-                            <p class="reach">reach me via</p>
-                            <a href="https://www.facebook.com/IMjustRK" class="facebook"  title="Facebook profile">
-                                <svg class="menu_icon">
-                                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                            <a href="https://twitter.com/Rk_riderking" class="twitter"  title="Twitter profile">
-                                <svg class="menu_icon">
-                                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        
-                    </div>
-                    <div class="mypic">
-                        <img src="img/rkk-min-compressed.png" alt="rk" class="mypic_img">
-                    </div>
-                </div>
-            </header>
-    
-            <!-- =================================================== ABOUT ========================================================== -->
-            <section class="about" id="about">
-                <h1 class="ml8">
-                    <span class="letters-container">
-                      <span class="letters letters-left">Hi</span>
-                      <span class="letters bang">!</span>
-                    </span>
-                    <span class="circle circle-white"></span>
-                    <span class="circle circle-dark"></span>
-                    <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
-                </h1>
-    
-                <div class="about_data">
-                    <div class="about_pic">
-                        <img src="img/about-min-compressed.jpg" alt="about" class="about_pic-me animate__pulse animate__animated">
-                    </div>
-                    <div class="about_bio">
-                        <div class="about_bio-title myinfo">
-                            <h6 class="heading-secondary">Let Me Introduce Myself !</h6>
-                            <h1 class="heading-primary">Biography</h1>
-                        </div>
-                        <p class="about_bio-para">
-                            I am <span class="para_highlight">Rahul Kumar</span>, and I am currently pursuing B.Tech in <strong>Computer Science and Engineering</strong>
-                            from <span class="para_highlight">Indian Institute of Information Technology, Kalyani, West Bengal</span>. I am Full Stack Web Developer
-                            and still learning new skills to improve my knowledge. I like to ride a Motorbike and watching movies, web series and hanging out with
-                            friends. 
-                        </p>
-                        <blockquote>
-                            <img src="img/SIGN.png" alt="Sign" class="sign">
-                        </blockquote>
-                    </div>
-                </div>
-            </section>
-    
-            <!-- =================================================== SKILLS ========================================================== -->
-            <section class="section-skills" id="skills">
-                <div class="skills">
-                    <div class="about_skills-title myinfo">
-                        <h6 class="heading-secondary">Here are some my skills</h6>
-                        <h1 class="heading-primary">My Skills</h1>
-                    </div>
-                    
-                    <!-- <h1 class="heading-1">Coding _ . . .</h1> -->
-                    <div class="skills_coding">
-                        
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/html5.png" alt="HTML5" class="skills_logo">
-                            <h3 class="skills_title">HTML5</h3>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" class="learnMore"  title="Click here to learn"target="_blank" target="_blank">Learn More &rarr;</a>
-                            
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/css-3.png" alt="CSS3" class="skills_logo">
-                            <h3 class="skills_title">CSS3</h3>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="learnMore"  title="Click here to learn" target="_blank">Learn More &rarr;</a>
-                        </div>
-    
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/javascript.png" alt="JS" class="skills_logo">
-                            <h3 class="skills_title">Javascript</h3>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="learnMore"  title="Click here to learn" target="_blank">Learn More &rarr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/jQuery.png" alt="jQuery" class="skills_logo">
-                            <h3 class="skills_title">jQuery</h3>
-                            <a href="https://jquery.com/" class="learnMore"  title="Click here to learn" target="_blank">Learn More &rarr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/express.png" alt="Express js" class="skills_logo">
-                            <h3 class="skills_title">Express</h3>
-                            <a href="https://expressjs.com/" class="learnMore"  title="Click here to learn" target="_blank">Learn More &rarr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/mongo.jpg" alt="MongoDB" class="skills_logo">
-                            <h3 class="skills_title">MongoDB</h3>
-                            <a href="https://www.mongodb.com/" class="learnMore"  title="Click here to learn" target="_blank">Learn More &rarr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/node.jpg" alt="Nodejs" class="skills_logo">
-                            <h3 class="skills_title">Nodejs</h3>
-                            <a href="https://nodejs.org/en/" class="learnMore"  title="Click here to learn" target="_blank">Learn More &rarr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/bootstrap.jpg" alt="Bootstrap" class="skills_logo">
-                            <h3 class="skills_title">Bootstrap</h3>
-                            <a href="https://getbootstrap.com/" class="learnMore"  title="Click here to learn" target="_blank">Learn More &rarr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/c.png" alt="C Language" class="skills_logo">
-                            <h3 class="skills_title">C</h3>
-                            <a href="hhttps://www.learn-c.org/" class="learnMore"  title="Click here to learn" target="_blank">Learn More &rarr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/cpp.png" alt="C++" class="skills_logo">
-                            <h3 class="skills_title">C++</h3>
-                            <a href="http://www.cplusplus.com/" class="learnMore"  title="Click here to learn" target="_blank">Learn More &rarr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/python.jpg" alt="Python" class="skills_logo">
-                            <h3 class="skills_title">Python</h3>
-                            <a href="https://www.python.org/" class="learnMore"  title="Click here to learn" target="_blank">Learn More &rarr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/java.png" alt="Java" class="skills_logo">
-                            <h3 class="skills_title">Java</h3>
-                            <a href="https://www.java.com/en/" class="learnMore"  title="Click here to learn" target="_blank">Learn More &rarr;</a>
-                        </div>
-                        
-                    </div>
-                    
-                    <h1 class="heading-1">Development Tools &rarr;</h1>
-                    <div class="skills_coding">
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/visual.png" alt="Visual Studio code" class="skills_logo">
-                            <h3 class="skills_title">VS Code</h3>
-                            <a href="https://code.visualstudio.com/" class="learnMore"  title="Click here to download" target="_blank" target="_blank">Download &darr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/bracket.jpg" alt="Bracket" class="skills_logo">
-                            <h3 class="skills_title">Bracket</h3>
-                            <a href="https://github.com/adobe/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.msi" class="learnMore"  title="Click here to download" target="_blank" target="_blank">Download &darr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/sublime.png" alt="Sublime Text 3" class="skills_logo">
-                            <h3 class="skills_title">Sublime Text 3</h3>
-                            <a href="https://download.sublimetext.com/Sublime%20Text%20Build%203211%20x64%20Setup.exe" class="learnMore"  title="Click here to download" target="_blank" target="_blank">Download &darr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/codepen.png" alt="Codepen" class="skills_logo">
-                            <h3 class="skills_title">Codepen</h3>
-                            <a href="https://codepen.io/pen/" class="learnMore"  title="Click here to download" target="_blank" target="_blank">Download &darr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/atom.jpg" alt="Atom" class="skills_logo">
-                            <h3 class="skills_title">Atom</h3>
-                            <a href="https://atom.io/download/windows_x64" class="learnMore"  title="Click here to download" target="_blank" target="_blank">Download &darr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/anaconda.png" alt="Anaconda" class="skills_logo">
-                            <h3 class="skills_title">Anaconda</h3>
-                            <a href="https://www.anaconda.com/products/individual#Downloads" class="learnMore"  title="Click here to download" target="_blank" target="_blank">Download &darr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/codeblock.jpg" alt="Codeblock" class="skills_logo">
-                            <h3 class="skills_title">Codeblock</h3>
-                            <a href="http://www.codeblocks.org/downloads/binaries" class="learnMore"  title="Click here to download" target="_blank" target="_blank">Download &darr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/spyder.png" alt="Spyder" class="skills_logo">
-                            <h3 class="skills_title">Spyder</h3>
-                            <a href="https://www.spyder-ide.org/#" class="learnMore"  title="Click here to download" target="_blank" target="_blank">Download &darr;</a>
-                        </div>
-                        <div class="skills_thumbnail">
-                            <img src="img/skills icon/netbeans.png" alt="Netbeans" class="skills_logo">
-                            <h3 class="skills_title">Netbeans</h3>
-                            <a href="https://netbeans.apache.org/download/nb120/nb120.html" class="learnMore"  title="Click here to download" target="_blank" target="_blank">Download &darr;</a>
-                        </div>
-    
-                    </div>
-                </div>
-            </section>
-    
-            <!-- =================================================== WORKS ========================================================== -->
-            <section class="section-works" id="works">
-                <div class="about_skills-title myinfo tempp">
-                    <h6 class="heading-secondary">Lets View Some of my works</h6>
-                    <h1 class="heading-primary">Featured Projects</h1>
-                </div>
-                <div class="works_container">
-    
-                    <a href="https://github.com/rkrider/omnifood" class="work_link work_pic-1">
-                        <img src="img/Projects/Omnifood-min.gif" alt="omnifood" class="work_pic">
-                        <h1 class="work_title">Omnifood</h1>
-                    </a>
-    
-                    <a href="https://github.com/rkrider/Base-Apparel" class="work_link work_pic-2">
-                        <img src="img/Projects/Base-min.gif" alt="base" class="work_pic">
-                        <h1 class="work_title">Base Appreal</h1>
-                    </a>
-    
-                    <a href="https://github.com/rkrider/trillo" class="work_link work_pic-3">
-                        <img src="img/Projects/Trillo-min.gif" alt="trillo" class="work_pic"> 
-                        <h1 class="work_title">Trillo</h1>   
-                    </a>
-    
-                    <a href="https://github.com/rkrider/frontloops" class="work_link work_pic-4">
-                        <img src="img/Projects/Pastelle city.png" alt="Pastelle city" class="work_pic">
-                        <h1 class="work_title">Pastelle City</h1>
-                    </a>
-    
-                    <a href="https://github.com/rkrider/frontloops" class="work_link work_pic-5">
-                        <img src="img/Projects/Debit Card-min.gif" alt="account statement" class="work_pic">
-                        <h1 class="work_title">Account statement</h1>
-                    </a>
-                    <a href="https://github.com/rkrider/nexter" class="work_link work_pic-6">
-                        <img src="img/Projects/Nexter-min.gif" alt="Nexter" class="work_pic">
-                        <h1 class="work_title">Nexter</h1>
-                    </a>
-                    <a href="https://github.com/rkrider/trillo" class="work_link work_pic-7">
-                        <img src="img/Projects/Natours-min.gif" alt="Natours" class="work_pic">
-                        <h1 class="work_title">Natours</h1>
-                    </a>
-                    <a href="" class="work_link work_pic-8">
-                        <img src="img/Projects/Four card.png" alt="four card feature section" class="work_pic">
-                        <h1 class="work_title">Four Card Feature Section</h1>
-                    </a>
-                    <a href="https://github.com/rkrider/frontloops" class="work_link work_pic-9">
-                        <img src="img/Projects/Become a Member-min.gif" alt="become a member" class="work_pic">
-                        <h1 class="work_title">Become a Member</h1>
-                    </a>
-                    <a href="" class="work_link work_pic-10">
-                        <img src="img/Projects/login.JPG" alt="login form" class="work_pic">
-                        <h1 class="work_title">Login Form</h1>
-                    </a>
-                    <a href="" class="work_link work_pic-11">
-                        <img src="img/Projects/sigup.JPG" alt="sign up form" class="work_pic">
-                        <h1 class="work_title">Sign Up Form</h1>
-                    </a>
-                    <a href="" class="work_link work_pic-11">
-                        <img src="img/Projects/TODO-min.gif" alt="TODO" class="work_pic">
-                        <h1 class="work_title">TODO List</h1>
-                    </a>
-                </div>
-            </section>
-    
-            <!-- =================================================== FORM ========================================================== -->
-            <section class="section-form" id="form">
-                <div class="form_container">
-                    <div class="myinfo form_container-title">
-                        <h3 class="heading-secondary">Give me your feedback !</h3>
-                        <h1 class="heading-primary">Contact Me</h1>
-                    </div>
-                    <form action="https://formspree.io/mzbjkqnz" method="POST" class="form">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
-                            
-                            <label for="email">Email</label>
-                            <input type="email" name="_replyto" id="email" placeholder="Enter your email" required>
-                            
-                            <label for="description">Feedback</label>
-                            <textarea name="message" id="description" cols="10" rows="4" placeholder="Feel free to share your feedback ..."></textarea>
-                        <button type="submit" class="form_button">Submit</button>
-                    </form>
-                </div>
-            </section>
-            <!-- =================================================== FOOTER ========================================================== -->
+            <div class="content_wrap">
+                 <div class="content_wrap-icon">
+                    <i class="fas fa-tv fa-5x icon"></i>
+                 </div>
+                 <h2 class="content_wrap-heading">IT Consulting</h2>
+                 <p class="content_wrap-para">Naresh i Technologies is No.1 leading training institute in hyderabad offering weekend training in Java, J2EE, .NET and Oracle.</p>
+            </div>
 
+            <div class="content_wrap">
+                 <div class="content_wrap-icon">
+                    <i class="fas fa-chalkboard-teacher fa-5x icon"></i>
+                 </div>
+                 <h2 class="content_wrap-heading">Classroom Training</h2>
+                 <p class="content_wrap-para">We have the best faculty with excellent Lab Infrastructure along with detailed course material.</p>
+            </div>
 
-<%- include('partials/footer.ejs') %>
+            <div class="content_wrap">
+                 <div class="content_wrap-icon">
+                    <i class="far fa-check-circle fa-5x icon"></i>
+                 </div>
+                 <h2 class="content_wrap-heading">Online Training</h2>
+                 <p class="content_wrap-para">We offer most of the course online with virtual classroom to serve the IT aspirants.</p>
+            </div>
+
+            <div class="content_wrap">
+                 <div class="content_wrap-icon">
+                    <i class="fas fa-people-carry fa-5x icon"></i>
+                 </div>
+                 <h2 class="content_wrap-heading">Corporate Training</h2>
+                 <p class="content_wrap-para">We have experienced faculty to train professionals for improving their technology skills to day to day needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses">
+        <h3 class="courses_heading">FEATURED SOFTWARE COURSES</h3>
+
+        <div class="courses_slider">
+            <div class="image_wrap">
+                <img src="../img/skills icon/square (1).jpg" alt="ATOM" class="image_wrap-img">
+            </div>
+            <div class="image_wrap">
+                <img src="../img/skills icon/square (2).jpg" alt="ATOM" class="image_wrap-img">
+            </div>
+            <div class="image_wrap">
+                <img src="../img/skills icon/square (3).jpg" alt="ATOM" class="image_wrap-img">
+            </div>
+            <div class="image_wrap">
+                <img src="../img/skills icon/codepen.png" alt="ATOM" class="image_wrap-img">
+            </div>
+            <div class="image_wrap">
+                <img src="../img/skills icon/express.png" alt="ATOM" class="image_wrap-img">
+            </div>
+            <div class="image_wrap">
+                <img src="../img/skills icon/mongo.jpg" alt="ATOM" class="image_wrap-img">
+            </div>
+            <div class="image_wrap">
+                <img src="../img/skills icon/node.jpg" alt="ATOM" class="image_wrap-img">
+            </div>
+            <div class="image_wrap">
+                <img src="../img/skills icon/bootstrap.jpg" alt="ATOM" class="image_wrap-img">
+            </div>
+            <div class="image_wrap">
+                <img src="../img/skills icon/spyder.png" alt="ATOM" class="image_wrap-img">
+            </div>
+        </div>
+    </section>
+    
+    <%- include('partials/footer.ejs') %>
+
+</section>  <!-- MAIN BODY ENDED-->
+

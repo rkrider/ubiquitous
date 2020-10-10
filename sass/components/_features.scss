@@ -1,0 +1,60 @@
+.features{
+    padding: 3rem;
+    background-color:$color-background;
+    
+
+    &_heading{
+
+        &-title{
+            font-size: 2.2rem;
+            padding: 1rem 0;
+        }
+
+        &-para{
+            font-size: 1.6rem;
+            padding: 1rem 0;
+
+        }
+    }
+
+    &_content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        text-align: center;
+
+    }
+}
+
+.content_wrap{
+    padding: 2rem;
+
+    &-icon{
+        padding: 3rem;
+        border-radius: 50%;
+        border: 1rem solid $color-primary-light;
+        display: inline-block;
+        transition: all 0.5s;
+    
+        &:hover i{
+            color: orange;
+            transform: scale(1.3);
+            transition: all 0.5s;
+        }
+    }
+
+    &-heading{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    &-para{
+        font-size: 1.4rem;
+        font-style: italic;
+    }
+}
+
+.icon{
+    color: $color-primary;
+}

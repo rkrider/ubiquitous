@@ -1,11 +1,6 @@
 var express = require("express"),
-    app = express(),
-    bodyParser = require("body-parser"),
-    mongoose = require("mongoose"),
-    Feedback = require("./feedback");
+    app = express();
 
-mongoose.connect('mongodb://localhost:27017/portfolio', {useNewUrlParser: true, useUnifiedTopology: true});
-app.use(bodyParser.urlencoded({ extended : true }));
 app.use(express.static(__dirname + "/public"));
 app.set("view engine","ejs");
 
@@ -13,9 +8,10 @@ app.get("/", function (req,res) {
     res.render("index");
 });
 
-app.get("/navigation", function(req,res){
-    res.render("navigation");
-})
+app.get("/allcourses", function(req,res){
+    res.render("allcourses");
+});
+
 
  app.get("/*", function (req, res) { 
      res.send("404 page not found");

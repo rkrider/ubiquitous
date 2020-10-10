@@ -4,22 +4,21 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    
 }
 
 html{
     font-size: 62.5%;
-
-    @media only screen and (max-width:85rem) {
-        font-size: 50%;
-    }
+    
 }
 body{
-    font-weight: 400;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-::selection{
-    background-color: $color-orange;
-    color: $color-primary-dark;
+.main_body{
+    // width: 75%;
+    height: auto;
+    // margin: 1rem auto;
+    // box-shadow: 0 4rem 50rem rgba(#000000,  1);
 }
