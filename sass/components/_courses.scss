@@ -1,5 +1,6 @@
 .courses{
     padding: 3rem;
+    background-color: aqua;
 
     &_heading{
         font-size: 1.5rem;
@@ -7,10 +8,8 @@
     }
 
     &_slider{
-        // height: 18rem; 
         display: flex;
         overflow: scroll;  
-
     }
 }
 

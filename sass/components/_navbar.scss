@@ -263,6 +263,14 @@ a{
 
 @media (max-width: 920px){
 
+    .container{
+        padding: 0.5rem 1rem;
+    }
+
+    .logo{
+        width: 150%;
+    }
+
     .dropdown{
         width: 400%  !important ; 
         overflow: hidden;
