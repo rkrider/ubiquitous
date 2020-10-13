@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&family=Source+Serif+Pro:wght@700&display=swap");
 *,
 *::before,
 *::after {
@@ -746,3 +747,167 @@ a {
   line-height: 1.2;
   letter-spacing: 0.1em;
   text-align: center; }
+
+.login {
+  background-image: url("../../img/login-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding: 5.6rem 18rem; }
+  @media only screen and (max-width: 1200px) {
+    .login {
+      padding: 5.6rem 5rem;
+      height: auto; } }
+  @media only screen and (max-width: 768px) {
+    .login {
+      padding: 0;
+      height: auto; } }
+  @media only screen and (max-width: 500px) {
+    .login {
+      padding: 0;
+      height: auto; } }
+  .login_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    box-shadow: 0 4rem 50rem black;
+    padding: 3rem;
+    position: relative; }
+    @media only screen and (max-width: 768px) {
+      .login_container {
+        padding: 1; } }
+    @media only screen and (max-width: 500px) {
+      .login_container {
+        padding: 2; } }
+
+.close-login {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 3rem;
+  margin-right: 13rem;
+  color: wheat;
+  font-size: 2.5rem; }
+  @media only screen and (max-width: 768px) {
+    .close-login {
+      margin-top: 3rem;
+      color: #000;
+      margin-right: 3rem; } }
+  @media only screen and (max-width: 500px) {
+    .close-login {
+      margin-right: 2rem;
+      margin-top: 2rem;
+      color: #000; } }
+
+.image-wrap {
+  text-align: center; }
+
+.login-user {
+  width: 100%;
+  border-radius: 10px; }
+  @media only screen and (max-width: 768px) {
+    .login-user {
+      width: 50%; } }
+
+.form-wrap {
+  padding: 2rem; }
+  @media only screen and (max-width: 500px) {
+    .form-wrap {
+      padding: 1; } }
+
+.form-heading {
+  padding: 1.5rem;
+  font-size: 3rem;
+  background-color: #888282;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 0.5rem #000;
+  font-family: 'Source Serif Pro', serif; }
+
+.form {
+  padding: 2rem;
+  margin-top: 3rem; }
+  @media only screen and (max-width: 768px) {
+    .form {
+      padding: 0; } }
+
+.email-wrap {
+  padding: 1rem; }
+
+.password-wrap {
+  padding: 1rem; }
+
+label {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Sansita Swashed', cursive; }
+
+input[type=email],
+input[type=password] {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  font-size: 2rem;
+  transition: all 0.3s; }
+
+input[type=email]:focus,
+input[type=password]:focus {
+  outline: none;
+  border: none;
+  transform: scale(1.01);
+  border-bottom: 5px solid #eba118;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5); }
+
+.form-login-btn {
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 3rem;
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.1s;
+  margin-top: 1rem;
+  font-family: 'Source Serif Pro', serif; }
+
+.form-login-btn:hover {
+  transform: translateY(-2px); }
+
+.form-login-btn:active {
+  transform: translateY(0px); }
+
+.signup-choice {
+  padding: 1.5rem 1rem 1.5rem 1.5rem;
+  display: flex;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: 'Source Serif Pro', serif;
+  border-bottom: 2px solid #333; }
+
+.signup-choice p {
+  margin-right: 0.5rem; }
+
+.signup-choice a {
+  text-decoration: none;
+  color: #333; }
+
+.additional {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 1rem 0.3rem; }
+
+.additional a {
+  font-size: 1.4rem;
+  color: #333; }
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.remember label {
+  font-size: 1.3rem;
+  width: 20rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem; }

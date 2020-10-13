@@ -12,6 +12,10 @@ app.get("/allcourses", function(req,res){
     res.render("allcourses");
 });
 
+app.get("/login", function(req,res){
+    res.render("login");
+});
+
 
  app.get("/*", function (req, res) { 
      res.send("404 page not found");
