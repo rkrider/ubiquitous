@@ -534,11 +534,7 @@ a {
   width: 1600px;
   height: 560px;
   overflow: hidden;
-  visibility: hidden;
-  margin-top: 70px; }
-  @media only screen and (max-width: 1250px) {
-    #jssor_1 {
-      margin-top: 50px; } }
+  visibility: hidden; }
 
 .jssorl-009-spin {
   position: absolute;
