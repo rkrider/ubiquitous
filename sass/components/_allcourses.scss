@@ -1,0 +1,296 @@
+.section-allcourses{
+    // background-image: url(../../img/tirza-van-dijk-o1SKqmgSDbg-unsplash.jpg);
+    // background-size: cover;
+    // background-color: rgb(243, 235, 235);
+    background-image: linear-gradient(rgb(243, 223, 223),rgb(212, 212, 236));
+
+}
+.heading-allcourses{
+    font-size: 3.3rem;
+    text-align: center;
+    padding: 3rem 1;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    p{
+        font-size: 1.6rem;
+        letter-spacing: 0.5rem;
+    }
+    &:hover{
+        letter-spacing: 1.2rem;
+    }
+}
+
+.courses-wrap{
+    padding: 5rem;
+    text-align: center;
+    h1{
+        font-size: 3rem;
+        padding: 1rem;
+        text-transform: uppercase;
+        border-bottom: 4px solid $color-secondary-dark;
+        display: inline-block;
+        width: 60%;
+        transition: all 0.5s;
+        margin-bottom: 2rem;
+
+        &:hover{
+            width: 80%;
+            letter-spacing: 1.2;
+            // border-radius: 50%; 
+        }
+    }
+}
+
+.card{
+    //FUCNTIONALITY
+   perspective: 150rem;
+   -moz-perspective: 150rem;
+   position: relative;
+   height: 45rem;
+//    width:400px;
+
+
+    &__side{
+        height: 45rem;
+        -webkit-transition: all .8s ease;
+        transition: all .8s ease;
+        position: absolute;
+        left: 0;
+        right: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        -webkit-box-shadow: $shadow-property;
+        box-shadow: $shadow-property;
+
+        &--front{
+            background-color: $color-white;
+        }
+        &--back{
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+
+            &-1{
+                background-image: -webkit-gradient(linear, left top, right bottom, from($color-secondary-light), to($color-secondary-dark));
+                background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark);
+            }
+            &-2{
+                background-image: -webkit-gradient(linear, left top, right bottom, from($color-primary-light), to($color-primary-dark));
+                background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+            }
+            &-3{
+                background-image: -webkit-gradient(linear, left top, right bottom, from($color-tertiary-light), to($color-tertiary-dark));
+                background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark);
+            }
+        }
+    
+    }
+
+    &:hover &__side--front{
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back{
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    //FRONT SIDE STYLING
+
+    &__picture{
+        height: 20rem;
+        background-blend-mode: screen;
+        background-size: cover;
+        -webkit-clip-path:polygon(0 0,100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        &--1{
+            background-image: -webkit-gradient(linear,left top, right bottom,from($color-secondary-light), to($color-secondary-dark)),
+            url(../../img/chris-liverani-dBI_My696Rk-unsplash.jpg);
+            background-image: linear-gradient(to bottom right,$color-secondary-light, $color-secondary-dark),
+            url(../../img/chris-liverani-dBI_My696Rk-unsplash.jpg);
+            
+        }
+        &--2{
+            background-image: -webkit-gradient(linear,left top, right bottom,from($color-primary-light), to($color-primary-dark)),
+            url(../../img/chris-liverani-dBI_My696Rk-unsplash.jpg);
+            background-image: linear-gradient(to bottom right,$color-primary-light, $color-primary-dark),
+            url(../../img/chris-liverani-dBI_My696Rk-unsplash.jpg);
+        }
+        &--3{
+            background-image: -webkit-gradient(linear,left top, right bottom,from($color-tertiary-light), to($color-tertiary-dark)),
+            url(../../img/chris-liverani-dBI_My696Rk-unsplash.jpg);
+            background-image: linear-gradient(to bottom right,$color-tertiary-light, $color-tertiary-dark),
+            url(../../img/chris-liverani-dBI_My696Rk-unsplash.jpg);
+        }
+    }
+
+    &__heading{
+        font-size: 1.9rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-black;
+        position: absolute;
+        top: 8rem;
+        right: 2rem;
+        text-align: right;
+        width: 87%;
+        line-height: 3.5rem;
+        
+    }
+
+    &__heading-span{
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break:clone; //The box-decoration-break property specifies how the background, padding, border, border-image, box-shadow, margin, and clip-path of an element is applied when the box for the element is fragmented.
+        box-decoration-break: clone;
+
+        &--1{
+            background-image: -webkit-gradient(linear, 
+            left top, right bottom, 
+            from(rgba($color-secondary-light,.85)), 
+            to(rgba($color-secondary-dark,.85)));
+            background-image: linear-gradient(to bottom right, 
+            rgba($color-secondary-light,.85), 
+            rgba($color-secondary-dark,.85));
+        }
+        &--2{
+            background-image: -webkit-gradient(linear, 
+            left top, right bottom, 
+            from(rgba($color-primary-light,.85)), 
+            to(rgba($color-primary-dark,.85)));
+            background-image: linear-gradient(to bottom right, 
+            rgba($color-primary-light,.85), 
+            rgba($color-primary-dark,.85));
+        }
+        &--3{
+            background-image: -webkit-gradient(linear, 
+            left top, right bottom, 
+            from(rgba($color-tertiary-light,.85)), 
+            to(rgba($color-tertiary-dark,.85)));
+            background-image: linear-gradient(to bottom right, 
+            rgba($color-tertiary-light,.85), 
+            rgba($color-tertiary-dark,.85));
+        }
+    }
+
+    &__details{
+        padding: 2rem 0;
+
+        ul{
+            list-style: none;
+            width: 90%; //for not complete underline
+            margin: 0 auto;
+
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+
+            }
+        }
+    }
+
+    //BACK SIDE STYLILNG
+
+    &__cta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box{
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+
+    }
+
+    &__price-only{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+
+    }
+    &__price-value{
+        font-size: 6rem;
+        font-weight: 100;
+
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    @include respond(tab-port){
+        height: auto;
+        -webkit-box-shadow: $shadow-property;
+        box-shadow: $shadow-property;
+        background-color: $color-white;
+
+            &__side{
+                height: auto;
+                position: relative;
+                border-radius: 5px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+
+                &--back{
+                    -webkit-transform: rotateY(0);
+                    transform: rotateY(0);
+                    -webkit-clip-path: polygon(0 15%, 100% 0,100% 100%, 0 100%);
+                    clip-path: polygon(0 15%, 100% 0,100% 100%, 0 100%);
+                    //margin-top: -4.3rem;
+                }
+            
+            }
+
+            &:hover &__side--front{
+                -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+            }
+
+            &__details{
+                padding: 1rem 3rem;
+            }
+            //BACK SIDE STYLILNG
+
+            &__cta{
+                position: relative;
+                top: 0;
+                left: 0;
+                -webkit-transform: translate(0);
+                transform: translate(0);
+                width: 100%;
+                padding: 7rem 4rem 4rem 4rem;
+            }
+
+            &__price-box{
+                margin-bottom: 3rem;
+
+            }
+
+            &__price-value{
+                font-size: 5rem;
+            }
+    }
+}
+
+.discover-btn{
+    text-align: center;
+    padding: 2rem;
+
+    a{
+        padding: 1rem 1.5rem;
+    }
+}

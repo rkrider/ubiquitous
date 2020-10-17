@@ -33,12 +33,13 @@
     &-icon{
         padding: 3rem;
         border-radius: 50%;
-        border: 1rem solid $color-primary-light;
+        border: 1rem solid $color-secondary-light;
         display: inline-block;
         transition: all 0.5s;
+        cursor: pointer;
     
         &:hover i{
-            color: orange;
+            color: $color-secondary;
             transform: scale(1.3);
             transition: all 0.5s;
         }
@@ -56,5 +57,5 @@
 }
 
 .icon{
-    color: $color-primary;
+    color: $color-secondary-dark;
 }

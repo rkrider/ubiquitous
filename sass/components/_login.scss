@@ -32,11 +32,11 @@
         position: relative;
 
         @media only screen and (max-width:768px){
-            padding: 1;
+            padding: 1rem;
         }
 
         @media only screen and (max-width:500px){
-            padding: 2;
+            padding: 2rem;
         }
     }
 }
@@ -46,19 +46,19 @@
     top: 0;
     margin-top: 3rem;
     margin-right: 13rem;
-    color: wheat;
+    color: $color-white;
     font-size: 2.5rem;
+    z-index: 10;
 
     @media only screen and (max-width:768px){
         margin-top: 3rem;
         color: $color-black;
-        margin-right: 3rem;
-        
+        margin-right: 3rem;        
     }
 
     @media only screen and (max-width:500px){
-        margin-right: 2rem;
-        margin-top: 2rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
         color: $color-black;
     }
 }
@@ -87,6 +87,11 @@
     border-radius: 1rem;
     box-shadow: 0 0.5rem 0.5rem $color-black;
     font-family: 'Source Serif Pro', serif;
+
+    @media only screen and (max-width:500px){
+        padding: 1.2rem;
+        font-size: 2.5rem;
+    }
 }
 .form{
     padding: 2rem;
@@ -123,13 +128,13 @@ input[type=password]:focus{
     outline: none;
     border: none;
     transform: scale(1.01);
-    border-bottom: 5px solid $color-primary-dark;
+    border-bottom: 2px solid $color-primary-dark;
     box-shadow: 0 0.5rem 0.5rem rgba($color-black,0.5);
 }
 .form-login-btn{
     padding: 1rem;
     font-size: 2rem;
-    border-radius: 3rem;
+    border-radius: 2rem;
     width: 100%;
     margin-top: 1rem;
     cursor: pointer;
