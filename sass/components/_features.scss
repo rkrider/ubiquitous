@@ -4,14 +4,15 @@
     
 
     &_heading{
+        text-align: center;
 
         &-title{
-            font-size: 2.2rem;
+            font-size: 3rem;
             padding: 1rem 0;
         }
 
         &-para{
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             padding: 1rem 0;
 
         }
@@ -51,7 +52,7 @@
     }
 
     &-para{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-style: italic;
     }
 }

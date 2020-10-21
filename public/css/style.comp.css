@@ -14,10 +14,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
-
-.main_body {
-  height: auto; }
+  font-family: 'Piazzolla', serif; }
 
 /*
 0-600px:         Phone
@@ -46,22 +43,23 @@ ORDER: Base + typography > general layout + grid  > page layout >  components
 }
 */
 #map1 {
-  height: 144px;
+  height: 200px;
   width: 100%;
   margin-top: 1rem; }
 
 #map2 {
-  height: 144px;
+  height: 200px;
   width: 100%;
   margin-top: 1rem; }
 
 .footer {
   background-color: #333;
   height: auto;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 2.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25.4rem, 1fr));
+  font-family: 'Roboto', sans-serif;
   grid-template-rows: auto;
   grid-gap: 2rem;
   color: #fff; }
@@ -156,7 +154,7 @@ a {
   color: #fff;
   padding: 0.8rem .8rem;
   letter-spacing: 1px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -415,12 +413,14 @@ a {
 .features {
   padding: 3rem;
   background-color: #fff; }
-  .features_heading-title {
-    font-size: 2.2rem;
-    padding: 1rem 0; }
-  .features_heading-para {
-    font-size: 1.6rem;
-    padding: 1rem 0; }
+  .features_heading {
+    text-align: center; }
+    .features_heading-title {
+      font-size: 3rem;
+      padding: 1rem 0; }
+    .features_heading-para {
+      font-size: 1.8rem;
+      padding: 1rem 0; }
   .features_content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
@@ -445,7 +445,7 @@ a {
     font-size: 2rem;
     padding: 1rem; }
   .content_wrap-para {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-style: italic; }
 
 .icon {
