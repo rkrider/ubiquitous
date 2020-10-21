@@ -4,22 +4,22 @@
     font-size: 1.4rem;
     padding: 2.5rem;
     display: grid;
+    // grid-template-columns: repeat(auto-fit,minmax(25.4rem,1fr));
     grid-template-columns: repeat(auto-fit,minmax(25.4rem,1fr));
+
     grid-template-rows: auto;
     grid-gap: 2rem;
     color: $color-white;
-
-    
 
     &_heading{
         padding: 0.5rem;        
     }
     
-
     &_content{
         padding: 0.5rem;
         margin-top: 1rem;
     }
+
     &_about{
 
         &-para{

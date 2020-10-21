@@ -45,6 +45,16 @@ ORDER: Base + typography > general layout + grid  > page layout >  components
         } 
 }
 */
+#map1 {
+  height: 144px;
+  width: 100%;
+  margin-top: 1rem; }
+
+#map2 {
+  height: 144px;
+  width: 100%;
+  margin-top: 1rem; }
+
 .footer {
   background-color: #333;
   height: auto;
@@ -1130,6 +1140,74 @@ input[type=password]:focus {
   padding: 2rem; }
   .discover-btn a {
     padding: 1rem 1.5rem; }
+
+.section-dataScience_image {
+  background-image: url(../../img/data-science-bg.jpg);
+  background-size: contain;
+  padding: 12rem 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .section-dataScience_image h1 {
+    font-size: 8rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    font-weight: 100; }
+  .section-dataScience_image div {
+    color: #fff;
+    font-size: 1.3rem; }
+  .section-dataScience_image div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase; }
+
+.section-dataScience_overview {
+  padding: 5% 10%;
+  text-align: center; }
+  .section-dataScience_overview h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem; }
+  .section-dataScience_overview p {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem; }
+  .section-dataScience_overview div a {
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #333;
+    padding: 1.5rem 2.5rem; }
+
+.section-dataScience_highlight {
+  padding: 3rem 3rem;
+  background-color: #333;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  grid-template-rows: auto; }
+  .section-dataScience_highlight div {
+    padding: 1rem;
+    color: #fff;
+    text-align: center; }
+    .section-dataScience_highlight div h1 {
+      font-size: 3rem;
+      padding: 1rem; }
+    .section-dataScience_highlight div p {
+      font-size: 1.5rem;
+      padding: 1rem; }
+
+.section-dataScience_courseContent {
+  padding: 3rem; }
+  .section-dataScience_courseContent h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase; }
 
 .row {
   max-width: 114rem;

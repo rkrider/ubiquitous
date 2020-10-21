@@ -12,6 +12,11 @@ app.get("/allcourses", function(req,res){
     res.render("allcourses");
 });
 
+
+app.get("/allcourses/datascience", function(req,res){
+    res.render("dataScience");
+});
+
 app.get("/login", function(req,res){
     res.render("login");
 });

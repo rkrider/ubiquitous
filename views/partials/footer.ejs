@@ -25,7 +25,7 @@
                     <h4 class="footer_heading">BANGALORE MAIN CAMPUS</h4>
                     <hr color="white" height="1px">
 
-                    <div class="footer_content">
+                    <!--<div class="footer_content">
                         Address: 2nd Floor, Durga Bhavani Plaza,<br>
                         Ameerpet, Hyderabad<br>
                         Phone : 040-2374 6666<br>
@@ -33,14 +33,17 @@
                         Email : info@nareshit.com<br>
                         For "Online Training"<br>
                         Call/Whatsapp: +91-8179191999<br>
-                        Email: online@nareshit.com
-                    </div>
+                        Email: online@nareshit.com -->
+                        <div id="map1"></div>
+                    <!--</div> -->
                 </div>
 
                 <div class="footer_branch">
                     <h4 class="footer_heading">NARESHIT CHENNAI BRANCH</h4>
                     <hr color="white" height="1px">
 
+                    <div id="map2"></div>
+                    <!--
                     <div class="footer_content">
                         2nd Floor Plot No.172 & 173,<br>
                         Above Axis Bank, Behind PTC Bus Stop,<br>
@@ -49,13 +52,19 @@
                         Phone: 95660 42345 / 95660 42845<br>
                         Email:chennai@nareshit.com
                     </div>
+                    -->
                 </div>
     </footer>
     <section class="copyright">
         © 2020 © 2017 Ubiquitous i Technologies | Software Training - Online Training - Live Project Training - Weekend Training    
         <!-- ======================= JS FILES ======================= -->
         <script src="js/jquery-3.5.0.min.js"></script>
-        <script src="js/script.js"></script>
         <script type="text/javascript">jssor_1_slider_init();</script>
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script async
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwJn19vJ4bT3oy-M_bTAqfzeKnP8jV4_8&callback=initMap&libraries=&v=weekly"
+                defer>
+        </script>
     </body>
 </html>

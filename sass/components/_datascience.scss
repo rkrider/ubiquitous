@@ -1,0 +1,95 @@
+.section-dataScience{
+
+    &_image{
+        background-image: url(../../img/data-science-bg.jpg);
+        background-size: contain;
+        padding: 12rem 9rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            font-size: 8rem;
+            color: $color-white;
+            text-transform: uppercase;
+            letter-spacing: 0.6rem;
+            font-weight: 100;
+        }
+        div{
+            color: $color-white;
+            font-size: 1.3rem;
+        }
+
+        div a{
+            text-decoration: none;
+            color: $color-white;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+        }
+    }
+
+    &_overview{
+        padding: 5% 10%;
+        text-align: center;
+
+        h1{
+            font-size: 5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6rem;
+        }
+        p{
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        div a{
+            font-size: 2.3rem;
+            text-decoration: none;
+            color: $color-white;
+            text-transform: uppercase;
+            background-color: $color-secondary-dark;
+            padding: 1.5rem 2.5rem;
+        }
+    }
+
+    &_highlight{
+        padding: 3rem 3rem;
+        background-color: $color-secondary-dark;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(36rem,1fr));
+        grid-template-rows: auto;
+
+        div{
+            padding: 1rem;
+            color: $color-white;
+            text-align: center;
+
+            h1{
+                font-size: 3rem;
+                padding: 1rem;
+            }
+
+            p{
+                font-size: 1.5rem;
+                padding: 1rem;
+            }
+        }
+    }
+
+    &_courseContent{
+        padding: 3rem;
+
+        h1{
+            font-size: 5rem;
+            text-align: center;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+    }
+
+    
+}
