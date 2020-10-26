@@ -3,14 +3,18 @@
     height: auto;
     font-size: 1.6rem;
     padding: 2.5rem 5rem;
-    display: grid;
+    // display: grid;
     // grid-template-columns: repeat(auto-fit,minmax(25.4rem,1fr));
-    grid-template-columns: repeat(auto-fit,minmax(25.4rem,1fr));
+    // grid-template-columns: repeat(auto-fit,minmax(25.4rem,1fr));
     font-family: 'Roboto', sans-serif;
 
-    grid-template-rows: auto;
-    grid-gap: 5rem;
+    // grid-template-rows: auto;
+    // grid-gap: 5rem;
     color: $color-white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
     &_heading{
         padding: 0.5rem;        
@@ -22,9 +26,11 @@
     }
 
     &_about{
+        flex: 0 0 50%;
 
         &-para{
             margin-top: 1rem;
+            line-height: 1.8;
         }
     }
 
