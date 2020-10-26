@@ -20,7 +20,7 @@
 
     &_content{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         grid-template-rows: auto;
         grid-gap: 1rem;
         text-align: center;

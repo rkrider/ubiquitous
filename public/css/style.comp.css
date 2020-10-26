@@ -66,12 +66,12 @@ ORDER: Base + typography > general layout + grid  > page layout >  components
   background-color: #333;
   height: auto;
   font-size: 1.6rem;
-  padding: 2.5rem;
+  padding: 2.5rem 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25.4rem, 1fr));
   font-family: 'Roboto', sans-serif;
   grid-template-rows: auto;
-  grid-gap: 2rem;
+  grid-gap: 5rem;
   color: #fff; }
   .footer_heading {
     padding: 0.5rem; }
@@ -125,6 +125,10 @@ a {
     .container {
       padding: 1rem 0.5rem;
       height: 50px; } }
+  @media only screen and (max-width: 1000px) {
+    .container {
+      padding: 1rem 0rem;
+      height: 50px; } }
 
 .logo-container {
   flex: 0 0 10%;
@@ -143,6 +147,9 @@ a {
 .nav-btn {
   flex: 0 0 83%;
   display: flex; }
+  @media only screen and (max-width: 1000px) {
+    .nav-btn {
+      flex: 0 0 90%; } }
 
 .nav-links {
   flex: 2; }
@@ -453,7 +460,7 @@ a {
       padding: 1rem 0; }
   .features_content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-template-rows: auto;
     grid-gap: 1rem;
     text-align: center; }
@@ -1180,6 +1187,9 @@ input[type=password]:focus {
   background-color: #333;
   font-size: 1.6rem;
   padding: 0.8rem 4rem; }
+  @media only screen and (max-width: 800px) {
+    .header-top {
+      padding: 0.8rem 1rem; } }
   .header-top ul {
     display: flex;
     justify-content: center;
@@ -1189,6 +1199,13 @@ input[type=password]:focus {
       margin: 0 1rem; }
       .header-top ul li:not(:last-child) {
         border-right: 1px solid #fff; }
+      @media only screen and (max-width: 800px) {
+        .header-top ul li {
+          margin: 0; } }
+      @media only screen and (max-width: 500px) {
+        .header-top ul li:first-child {
+          margin-right: -20rem;
+          border: none; } }
       @media only screen and (max-width: 500px) {
         .header-top ul li:not(:first-child) {
           display: none; }
@@ -1198,6 +1215,9 @@ input[type=password]:focus {
         text-decoration: none;
         color: #fff;
         padding: 3rem; }
+        @media only screen and (max-width: 650px) {
+          .header-top ul li a {
+            padding: 0 2rem; } }
 
 .section-dataScience_image {
   background-image: url(../../img/data-science-bg.jpg);
