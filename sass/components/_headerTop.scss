@@ -2,6 +2,8 @@
     background-color: $color-secondary-dark;
     font-size: 1.6rem;
     padding: 0.8rem 4rem;
+    display: flex;
+    justify-content: space-between;
 
     @media only screen and (max-width:800px){
         padding: 0.8rem 1rem;
@@ -14,40 +16,23 @@
 
         li{
             list-style: none;
-            margin: 0 1rem;
+            color: $color-white;
 
-            &:not(:last-child){
-                border-right: 1px solid $color-white;
-            }
-
-            @media only screen and (max-width:800px){
-                margin: 0;
-            }
-
-            @media only screen and (max-width:500px){
-                &:first-child{
-                    margin-right: -18rem;
-                    border: none;
-                }
-            }
-
-            @media only screen and (max-width:500px){
-                &:not(:first-child){
-                    display: none;
-                }
-
-                &:first-child{
-                    border-left:1px solid $color-white;
-                }
-            }
+            // &:not(:last-child){
+            //     border-right: 1px solid $color-white;
+            // }
 
             a{
                 text-decoration: none;
                 color: $color-white;
-                padding: 3rem;
+                padding: 2rem;
 
                 @media only screen and (max-width:650px){
                     padding:0 2rem;
+                }
+
+                i{
+                    color: $color-primary-dark;
                 }
             }
         }
