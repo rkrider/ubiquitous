@@ -25,6 +25,12 @@
         grid-gap: 1rem;
         text-align: center;
 
+        @media only screen and (max-width:360px){
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+            grid-template-rows: auto;
+            grid-gap: 1rem;
+        }
+
     }
 }
 
